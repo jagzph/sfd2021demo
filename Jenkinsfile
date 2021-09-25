@@ -4,7 +4,7 @@ pipeline {
         stage('Orchestrate') {
            steps{
                script{
-                   sh 'kubectl apply -f mywebapp.yaml'
+                   sh '/usr/local/bin/kubectl/kubectl apply -f mywebapp.yaml'
                }
            }
         }
