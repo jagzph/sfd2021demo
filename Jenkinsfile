@@ -11,7 +11,7 @@ pipeline {
         stage('Orchestrate') {
            steps{
                script{
-                   sh './kubectl apply -f mywebapp.yaml'
+                   sh './kubectl create -f mywebapp.yaml'
                }
            }
         }
